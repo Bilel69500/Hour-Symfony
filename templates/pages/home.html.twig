@@ -1,15 +1,8 @@
 {%  extends 'base.html.twig' %}
 
  {% block body %}
- <h1>Coucou de Lyon ! </h1>
+     <img src="{{ asset('img/fr.jpg') }}" alt="Drapeau France" class="mt-12 h-40 rounded shadow-md">
+     <h1 class="mt-6 text-3xl sm:text-5xl font-semibold text-red-500">Coucou de Lyon ! </h1>
+     <p class="text-lg text-gray-900">Il est actuellement {{ 'now'|date('H:i') }}.</p>
 
-     <p>Il est actuellement {{ 'now'|date('H:i') }}.</p>
-
-     <footer>
-
-         <p>
-             &copy Copyright {{ 'now'|date('Y') }} &middot;
-             <a href="#"> A Propos</a>
-         </p>
-     </footer>
  {% endblock %}
